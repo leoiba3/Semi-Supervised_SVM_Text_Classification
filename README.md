@@ -22,6 +22,17 @@ The project uses the following datasets:
 - Sample dataset: `100samples.csv`
 - Labeled sample dataset (created after modifications in Excel): `100samples_labeled.csv`
 
+## Dataset Sample
+
+A snippet from the original dataset `Austin_311_Public_Data_20231107.csv`:
+
+| Service Request (SR) Number | SR Description | Method Received      | ...  | Map Tile |
+|------------|--------------------------|------------|---------| --- |
+| 19-00090956 | Animal - Proper Care    | Phone | ...   | ML25 |
+| 20-00135805 | Tree Issue ROW          | Mobile Device | ...  | MJ24 |
+| ...        | ...                      | ...        | ...     | ... |
+
+
 ## Project Structure
 
 - Data loading and sampling from `Austin_311_Public_Data_20231107.csv`
@@ -45,6 +56,14 @@ The project uses the following datasets:
 
 - A classification report detailing the model's performance.
 - The complete dataset with predicted categories, saved as `complete_data.csv`.
+
+
+| Service Request (SR) Number | SR Description | Method Received      | ...  | Map Tile | Predicted Category |
+|------------|--------------------------|------------|---------| --- | --- |
+| 19-00090956 | Animal - Proper Care    | Phone | ...   | ML25 | Animal Services |
+| 20-00135805 | Tree Issue ROW          | Mobile Device | ...  | MJ24 | Tree Issues ans trimming |
+| ...        | ...                      | ...        | ...     | ... | ... |
+
 
 ## Contributing
 
